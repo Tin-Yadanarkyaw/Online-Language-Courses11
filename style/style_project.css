@@ -96,6 +96,11 @@ main_container{
     min-height: 500px;
     width: 76%;
     margin: 0px auto 0 auto;
+    padding: 10px;
+    line-height: 1.5em;
+    letter-spacing: 0.05em;
+    word-spacing: 0.03em;
+    
     /* border-left: 1px solid #a2a2a2;
     border-right: 2px solid #a2a2a2; */
 
@@ -106,6 +111,7 @@ main{
     min-height: 500px;
     width: 76%;
     margin: 0px auto 0 auto;
+    font-size: 19px;
     /* border-left: 1px solid #a2a2a2;
     border-right: 2px solid #a2a2a2; */
 
@@ -127,14 +133,15 @@ main aside h3{
 
 main aside ul{
     list-style: none;
-    padding: 0;
-    margin: 0;
+    padding: 10px;
+    margin: 10px;
 }
 main aside ul li{
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 10px;
+    
 }
 
 main aside ul li a{
@@ -213,6 +220,7 @@ main section#display_container article.teachers_card{
     transition: 0.3s;
     width: 100%;
     height: 250px;
+    padding: 20px;
     background-color: #f1f1f1;
 }
 
@@ -236,7 +244,7 @@ main section#display_container.teachers_card div{
 }
 
 main section#display_container article.teachers_card div p{
-    font-size: 1.3vw;
+    font-size: 1.1vw;
     /* margin-top: 4px;
     margin-bottom: 4px; */
 }
@@ -255,7 +263,7 @@ main section#display_container1 article.level_card{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     width: 100%;
-    height: 350px;
+    min-height: 250px;
     background-color: #f1f1f1;
 }
 
@@ -301,6 +309,12 @@ main section#body_container{
 .body_container .iframe{
     width:auto;
     height: 320px;
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-gap: 20px;
+    padding: 16px;
+    
+    
 }
 
 @media screen and (max-width:80px) {
@@ -313,7 +327,7 @@ footer{
     min-height: 80px;
     background-color: #393a42;    
     color:white;
-    font-size: 1.2vw;
+    font-size: 1vw;
 }
 
 #footer_container{
@@ -344,6 +358,7 @@ footer{
 
 #footer_container img{
     width: 50%;
+    
 }
 footer ul{
     list-style: none;
@@ -366,14 +381,18 @@ footer ul li a{
 .single_main_column h1.page_header_title{
     font-size: 20px;
     font-weight: 600;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     display: flex;
     justify-content: center;
+    min-height: 700;
+    line-height: 1.5em;
+    letter-spacing: 0.06em;
+    word-spacing: 0.08em;
 }
 
 .single_main_column p{
     width: 100%;
-    font-size: 12px;
+    font-size: 15px;
     margin-bottom: 8px;
     line-height: 20px;
     margin-bottom: 8px;
@@ -425,7 +444,7 @@ footer ul li a{
     }
 
     main section#display_content article.subject_card div p{
-        font-size: 1.8vw;
+        font-size: 1.9vw;
     }
 
     #footer_container{
@@ -448,7 +467,7 @@ footer ul li a{
     }
 
     footer{
-        font-size: 1.8vw;
+        font-size: 1.9vw;
     }
 }
 
@@ -491,7 +510,7 @@ footer ul li a{
         grid-template-columns: 1fr 1fr;
     }
 
-    main section#display_content article.teachers_card div p{
+    main section#display_container article.teachers_card div p{
         font-size: 1.8vw;
     }
 
@@ -524,10 +543,10 @@ footer ul li a{
         grid-template-columns: 1fr;
     }
     main section#display_content article.teachers_card div p{
-        font-size: 2.4vw;
+        font-size: 1.2vw;
     }
     nav a{
-        font-size: 2.4vw;        
+        font-size: 1.2vw;        
     }
 }
 
@@ -547,7 +566,7 @@ footer ul li a{
         
     }
     nav a{
-        font-size: 1.8vw;        
+        font-size: 1.2vw;        
     }
 
     section#section_jumbotron{
